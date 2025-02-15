@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from locators import Locators
 
-
+LOGIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/login'
 @pytest.fixture(scope="function")
 def driver():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -15,7 +15,7 @@ def driver():
 
 @pytest.fixture
 def login(driver):
-    driver.get("https://stellarburgers.nomoreparties.site/login")
+    driver.get(LOGIN_PAGE_URL)
     driver.find_element(*Locators.LOGIN_EMAIL_INPUT).send_keys("rasul_sсhihveliev_18_693@yandex.ru")
     driver.find_element(*Locators.LOGIN_PASSWORD_INPUT).send_keys("326758")
     driver.find_element(*Locators.LOGIN_SUBMIT_BUTTON).click()
