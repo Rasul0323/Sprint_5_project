@@ -1,6 +1,6 @@
 from locators import Locators
+from urls import REGISTER_PAGE_URL
 
-REGISTER_PAGE_URL = 'https://stellarburgers.nomoreparties.site/register'
 # Тест проверки успешной регистрации
 def test_successful_registration(driver):
     driver.get(REGISTER_PAGE_URL)

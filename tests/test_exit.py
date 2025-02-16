@@ -2,8 +2,8 @@ from conftest import login
 from locators import Locators
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from urls import LOGIN_PAGE_URL
 
-LOGIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/login'
 # Тест выхода по кнопке «Выйти» в личном кабинете.
 def test_exit_using_the_exit_button(driver, login):
     driver.get(LOGIN_PAGE_URL)

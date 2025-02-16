@@ -1,6 +1,6 @@
 from locators import Locators
+from urls import MAIN_PAGE_URL
 
-MAIN_PAGE_URL ='https://stellarburgers.nomoreparties.site/'
 # Тест проверки перехода к разделу "Булки"
 def test_go_to_the_rolls_section(driver):
     driver.get(MAIN_PAGE_URL)

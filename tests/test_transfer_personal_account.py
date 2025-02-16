@@ -1,9 +1,8 @@
 from locators import Locators
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from urls import MAIN_PAGE_URL, LOGIN_PAGE_URL
 
-MAIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/'
-LOGIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/login'
 # Тест проверки перехода по клику на «Личный кабинет»
 def test_click_to_your_personal_account(driver):
     driver.get(MAIN_PAGE_URL)

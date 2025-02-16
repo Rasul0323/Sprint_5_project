@@ -3,8 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from locators import Locators
+from urls import LOGIN_PAGE_URL
 
-LOGIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/login'
 @pytest.fixture(scope="function")
 def driver():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))

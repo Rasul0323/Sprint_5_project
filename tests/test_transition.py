@@ -2,9 +2,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from conftest import login
 from locators import Locators
+from urls import MAIN_PAGE_URL, LOGIN_PAGE_URL
 
-LOGIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/login'
-MAIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/'
 # Тест проверки перехода по клику на «Конструктор»
 def test_transition_to_constructor_via_button(driver, login):
     driver.get(LOGIN_PAGE_URL)
