@@ -1,8 +1,6 @@
 from locators import Locators
 from urls import MAIN_PAGE_URL, REGISTER_PAGE_URL, FORGOT_PASSWORD_URL
-MAIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/'
-REGISTER_PAGE_URL = 'https://stellarburgers.nomoreparties.site/register'
-FORGOT_PASSWORD_URL = 'https://stellarburgers.nomoreparties.site/forgot-password'
+
 # Тест для входа по кнопке «Войти в аккаунт» на главной странице
 def test_entrance_log_in_to_account_button(driver):
     driver.get(MAIN_PAGE_URL)
